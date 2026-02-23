@@ -6,7 +6,7 @@ rule:
       - xpzhxhm@gmail.com
     description: Match on files using ShellServiceObjectDelayLoad to persist. Windows Explorer uses this key to load COM objects at startup, allowing malicious DLLs to execute automatically.
     scopes:
-      static: function
+      static: file
       dynamic: span of calls
     att&ck:
       - Persistence::Event Triggered Execution::Component Object Model Hijacking [T1546.015]
